@@ -13,7 +13,7 @@ const staticEvents: Event[] = [
   {
     id: 'event-1',
     title: 'Aman Gupta',
-    image_url: '../src/image/aman.jpg',
+    image_url: '../public/images/aman.jpg',
     date: '2026-02-27',
   },
   {
