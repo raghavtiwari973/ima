@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { supabase } from '../lib/supabase';
+import { useState } from 'react';
 
 interface Highlight {
   id: string;
@@ -106,23 +105,6 @@ export const Highlights = () => {
   const [highlights, setHighlights] = useState<Highlight[]>(staticHighlights);
   const [playingVideo, setPlayingVideo] = useState<Highlight | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  useEffect(() => {
-    const fetchHighlights = async () => {
-      const { data } = await supabase.from('highlights').select('*');
-      if (data && data.length > 0) {
-        // Filter out the default template items coming from the database
-        const filteredData = data.filter(
-          (item) =>
-            !['IMA Summit 2024 Highlights', 'Leadership Workshop Series', 'Innovation Stories'].includes(
-              item.title
-            )
-        );
-        setHighlights([...staticHighlights, ...filteredData]);
-      }
-    };
-    fetchHighlights();
-  }, []);
 
   const getEmbedUrl = (url: string) => {
     if (!url) return '';
