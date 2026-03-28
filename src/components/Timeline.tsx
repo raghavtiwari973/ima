@@ -118,7 +118,7 @@ export const Timeline = () => {
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.7 }}
-                  src="../src/image/oldima.png"
+                  src="/image/oldima.png"
                   alt="IMA Journey 1963 to 2026"
                   className="w-full h-full object-cover"
                 />
@@ -130,7 +130,7 @@ export const Timeline = () => {
                 <motion.img
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.7 }}
-                  src="../src/image/backdrop.jpg"
+                  src="/image/backdrop.jpg"
                   alt="IMA Leadership and Growth"
                   className="w-full h-full object-cover object-center"
                 />

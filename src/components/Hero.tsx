@@ -60,7 +60,7 @@ export const Hero = () => {
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url(../src/image/backdrop.jpg)`,
+            backgroundImage: `url(/image/backdrop.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
