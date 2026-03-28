@@ -124,7 +124,7 @@ export const Hero = () => {
               transition={{ duration: 3, repeat: Infinity }}
             />
             <img
-              src="../src/image/logo.png"
+              src="/image/logo.png"
               alt="Indore Management Association"
               className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain relative drop-shadow-sm"
             />
